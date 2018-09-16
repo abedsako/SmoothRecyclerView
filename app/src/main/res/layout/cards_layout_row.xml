@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_main_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:paddingLeft="20.0dip"
+    android:paddingRight="20.0dip">
+
+    <RelativeLayout
+        android:id="@+id/main_layout"
+        android:layout_width="200.0dip"
+        android:layout_height="315.0dip"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="5.0dip"
+        android:layout_marginStart="5.0dip">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="200.0dip"
+            android:layout_height="300.0dip"
+            android:layout_alignParentTop="true"
+            app:cardCornerRadius="5.0dip"
+            app:cardElevation="0.0dip">
+
+            <ImageView
+                android:id="@+id/card_image"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="centerCrop" />
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/card_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_layout"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffffff"
+        android:textSize="18.0sp" />
+</RelativeLayout>
